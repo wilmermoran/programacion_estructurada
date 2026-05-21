@@ -1,1 +1,28 @@
+El Paseo del Colegio (Anidado en el SÍ) 
 
+El programa debe preguntar (Leer) al estudiante si trajo su permiso (Variable 1 para Sí, 2 para No).
+Si (Condicional) trajo el permiso, el tutor le pregunta (Leer otra vez) si ya pagó la cuota (Variable nueva, 1 para Sí, 2 para No).
+Si pagó la cuota, el programa muestra (Escribir): "¡Todo listo! Sube al bus."
+Si no la pagó, muestra: "Tienes permiso, pero no has pagado. No puedes subir."
+Volviendo a la primera regla, Si no trajo el permiso, el programa simplemente muestra: "Sin la firma de tu representante no viajas. Te quedas en el colegio."
+
+
+algoritmo Apolo
+ definir permiso, cuota como entero
+
+escribir "¡trajo permiso? (1: Si, 2: No)"
+Leer permiso
+
+si permiso == 1 Entonces
+     Escribir"¿Ya pago la cuota?(1: Si , 2: No)"
+     Leer cuota
+
+     Si cuota == 1 Entonces
+          escribir"Todo listo, Puede pasar"
+     Sino 
+          Escribir"Tienes permiso pero no has pagado "
+     Finsi
+Sino
+     escribir "No tiene permiso, Sin la firma de su representante no puede pasar" 
+Finsi
+FinAlgoritmo
